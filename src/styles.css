@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+  body {
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgb(78, 78, 78), white);
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    width: 304px;
+    height: 510px;
+    opacity: 90%;
+    background-color: rgb(0, 0, 0);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 4em;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    border: 10px solid rgb(0, 0, 0);
+    padding: 12px;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 12px 4px rgb(59, 59, 59);
+  }
+  
+  .screen {
+    grid-column: 1 / 4;
+    color: rgb(0, 0, 0);
+    grid-row: 1 / 3;
+    background-color: rgb(197, 194, 194);
+    border: 2px black solid;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 11px;
+    flex-wrap: wrap;
+    word-break: break-all;
+    white-space: normal;
+    border-radius: 30px;
+    overflow: auto;
+    border: #696969 2px solid;
+    box-shadow: inset 6px 7px rgb(56, 55, 55);
+  }
+  
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .equals, .add, .subtract, .multiply, .divide, .decimal, .clear {
+    /* background-color: #F09D15; */
+    background-color: azure;
+    box-shadow: 4px 4px 4px 4px #494949 inset;
+    color: rgb(88, 88, 88);
+    font-size: 0.6em;
+    border-radius: 25%;
+    border: #414141 2px solid;
+    opacity: 90%;
+    margin: 6px;
+
+  }
+
+  input {
+    background-color:transparent;
+    outline:none;
+    cursor: pointer;
+  }
+
+
+  input:hover {
+    opacity: .7;
+  }
+
+  input:active {
+    box-shadow: 4px 4px 4px 4px #494949 inset;
+    transform: scale(0.97);
+  }
+
+
+  
+  .clear {
+    grid-column: 2 / 4;
+  }
+  
+  .mini-display {
+    font-size: 17px;
+    color: #808080;
+    align-self: start;
+  }
+  
+  @media(max-width: 650px) {
+    .container {
+      width: 160px;
+      height: 500px;
+    }
+
+    input {
+      width: 40px;
+      height: 40px;
+    }
+
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .equals, .add, .subtract, .multiply, .divide, .decimal, .clear {
+      font-size: 25px;
+
+    }
+
+    .clear {
+      width: 90px;
+    }
+
+    .screen {
+      height: 50px;
+      padding: 20px;
+      font-size: 25px;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
