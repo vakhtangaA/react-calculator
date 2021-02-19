@@ -4,7 +4,7 @@
 
   body {
     font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
-    /* background-image: linear-gradient(rgb(78, 78, 78), white); */
+    background-image: linear-gradient(rgb(78, 78, 78), white);
   }
 
   .flex {
