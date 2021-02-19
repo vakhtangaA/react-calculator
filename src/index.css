@@ -17,7 +17,6 @@
     display: grid;
     width: 304px;
     height: 510px;
-    opacity: 90%;
     background-color: rgb(0, 0, 0);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -60,7 +59,6 @@
     font-size: 0.6em;
     border-radius: 25%;
     border: #414141 2px solid;
-    opacity: 90%;
     margin: 6px;
 
   }
